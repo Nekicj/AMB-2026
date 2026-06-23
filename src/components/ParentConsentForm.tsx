@@ -8,7 +8,6 @@ const labelCls = "block text-xs font-medium text-neutral-500 mb-1.5 uppercase tr
 
 export default function ParentConsentForm() {
     const t = useTranslations("parentConsent");
-    const errorT = useTranslations("errors");
     const [isRepresentative, setIsRepresentative] = useState(false);
     const [statusMessage, setStatusMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
     const [loading, setLoading] = useState(false);
@@ -51,7 +50,7 @@ export default function ParentConsentForm() {
     };
 
     return (
-        <div className="max-w-xl mx-auto text-neutral-800 space-y-6 bg-white">
+        <div className="col-span-12 md:col-span-6 md:col-start-4 w-full max-w-xl mx-auto text-neutral-800 space-y-6 bg-white relative z-20">
 
             {statusMessage && (
                 <div className={`p-4 rounded-xl text-sm font-medium border ${
