@@ -10,7 +10,6 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: "Заполните все обязательные поля" }, { status: 400 });
         }
 
-        // Ищем участника по email или телефону
         const member = await db.teamMember.findFirst({
             where: {
                 OR: [
@@ -27,7 +26,6 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Проверяем, не было ли уже согласие
         const existing = await db.parentConsent.findUnique({
             where: { memberId: member.id },
         });
