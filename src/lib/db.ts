@@ -11,7 +11,7 @@ function createPrismaClient() {
     const connectionString = "postgresql://neondb_owner:npg_ke67dSwusvgL@ep-hidden-frog-atjnd7wc.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require";
     
     const pool = new Pool({ connectionString });
-    const adapter = new PrismaNeon(pool);
+    const adapter = new PrismaNeon(pool as any);
     return new PrismaClient({ adapter });
 }
 
