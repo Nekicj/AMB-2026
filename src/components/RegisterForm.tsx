@@ -34,11 +34,19 @@ export default function RegisterForm() {
             });
 
             if (!res.ok) {
-                const data = await res.json();
-                throw new Error(data.error || "Ошибка при отправке");
-            }
+                let errorMessage = `Ошибка сервера (${res.status})`;
+                const contentType = res.headers.get("content-type");
+            
+                if (contentType && contentType.includes("application/json")) {
+                    const data = await res.json();
+                    errorMessage = data.error || errorMessage;
+                } else {
+                    const textError = await res.text();
+                    console.error("Полный ответ сервера (HTML/Текст):", textError);
+                }
 
-            setIsSubmitted(true);
+                throw new Error(errorMessage);
+            }
         } catch (err: any) {
             setError(err.message);
         } finally {
