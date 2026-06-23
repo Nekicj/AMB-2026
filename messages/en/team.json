@@ -1,9 +1,89 @@
 {
   "team": [
     {
+      "name": "Binazir Zimanova",
+      "role": "Head Organizer of the Maths Battles Community",
+      "description": "Student at RFMS Almaty, Bronze Medalist of the International Mathematical Olympiad for Girls (EGMO) 2025 and 2026.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/lori_binazir?igsh=ZGFrdGlpa2lkYmox",
+      "linkedin": "",
+      "tg": "https://t.me/Osmium_1507"
+    },
+    {
+      "name": "Elizaveta Borovskikh",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/kakouto_liza_?igsh=cTVxN3h4MWc4NWgy&utm_source=qr",
+      "linkedin": "",
+      "tg": "https://t.me/bhgtfyd"
+    },
+    {
+      "name": "Alizhan Assylkhan",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at TAMOS Education International School.",
+      "photo": "placeholder.jpg",
+      "mail": "assylkhanalizhan@mail.ru",
+      "inst": "https://www.instagram.com/alizhan_a3?igsh=MTZsbnN5NHQ2eTF4ZQ==",
+      "linkedin": "",
+      "tg": "https://t.me/A1i3han"
+    },
+    {
+      "name": "Ramazan Nazarali",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at RFMS Almaty, Bronze Medalist of EGMO 2026, Absolute Winner of the 5th Republican Scientific Olympiad, Silver Medalist of KBO 2025.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/nzrxwxn?igsh=MWFrZTZndjFpZjExeQ%3D%3D&utm_source=qr",
+      "linkedin": "https://www.linkedin.com/in/nazarali-ramazan-66069a385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "tg": "https://t.me/nzrxwxb"
+    },
+    {
+      "name": "Zere Nazarbekkyzy",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at RFMS Almaty, Bronze and Silver Prize Winner of the Regional Stage of the Republican Physics Olympiad, Bronze Medalist of KBO 2025.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/zerenazarbekkyzy?igsh=MWI2cnQ1eWI0Z2FxdA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Zhasulan Ablay",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at RFMS Almaty.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/azhishkaa?igsh=MTg2azdpbXVwcDR1bw==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "David Tolegenov",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at School No. 121 in Almaty, multiple 2nd and 3rd place winner of Republican Informatics Olympiads in grades 7–9.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/asm.tangent?igsh=MTJtcGtscTFxdmFzOA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Miras Bazarbay",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Student at Haileybury Almaty International School, organizer of NSB 2025 and AMB 2025, Bronze Medalist of the 2025 Republican Mathematics Olympiad, Silver Medalist of the Republican Scientific Projects Competition.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "",
+      "linkedin": "",
+      "tg": "@quemiras1762"
+    },
+    {
       "name": "Amirlan Amanzholov",
-      "role": "Chief organizer of Maths Battles Community",
-      "description": "responsible for tournament organization and problem selection. Scholarship Awardee at Haileybury Almaty, winner of the Republican Olympiad in mathematics, International Math Olympiad 2024 , 2025 silver medalist, member of the national team.",
+      "role": "Organizer of the Maths Battles Community",
+      "description": "Haileybury Almaty scholarship recipient, winner of the Republican Mathematics Olympiad, Silver Medalist of the International Mathematical Olympiad in 2024 and 2025, member of Kazakhstan’s national team.",
       "photo": "Amirlan.jpg",
       "mail": "a.amanzholov@mathbattles.org",
       "inst": "https://www.instagram.com/amirlanamanzholov/",

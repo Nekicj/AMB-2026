@@ -1,9 +1,89 @@
 {
   "team": [
     {
+      "name": "Зиманова Биназир",
+      "role": "Главный организатор сообщества Maths Battles",
+      "description": "Ученица РФМШ г. Алматы, Бронзовая медалистка МЖО 2025 и 2026.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/lori_binazir?igsh=ZGFrdGlpa2lkYmox",
+      "linkedin": "",
+      "tg": "https://t.me/Osmium_1507"
+    },
+    {
+      "name": "Боровских Елизавета",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/kakouto_liza_?igsh=cTVxN3h4MWc4NWgy&utm_source=qr",
+      "linkedin": "",
+      "tg": "https://t.me/bhgtfyd"
+    },
+    {
+      "name": "Асылхан Алижан",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученица международной школы TAMOS Education.",
+      "photo": "placeholder.jpg",
+      "mail": "assylkhanalizhan@mail.ru",
+      "inst": "https://www.instagram.com/alizhan_a3?igsh=MTZsbnN5NHQ2eTF4ZQ==",
+      "linkedin": "",
+      "tg": "https://t.me/A1i3han"
+    },
+    {
+      "name": "Назарәлі Рамазан",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученик РФМШ г. Алматы, Бронзовый призер МЖО 2026, АБС 5 Республиканской научной олимпиады, Серебрянный медалист КБО 2025",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/nzrxwxn?igsh=MWFrZTZndjFpZjExeQ%3D%3D&utm_source=qr",
+      "linkedin": "https://www.linkedin.com/in/nazarali-ramazan-66069a385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "tg": "https://t.me/nzrxwxb"
+    },
+    {
+      "name": "Зере Назарбекқызы",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученик РФМШ г. Алматы, Бронзовый и Серебряный призер областного этапа Республиканской Олимпиады по физике, Бронзовый призер KBO 2025.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/zerenazarbekkyzy?igsh=MWI2cnQ1eWI0Z2FxdA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Аблай Жасұлан",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученик РФМШ г. Алматы.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/azhishkaa?igsh=MTg2azdpbXVwcDR1bw==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Толегенов Давид",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученик 121 общеобразовательной школы г. Алматы, 2-3 места на республиканских олимпиадах по информатике в 7-9 классах.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/asm.tangent?igsh=MTJtcGtscTFxdmFzOA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Базарбай Мирас",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Ученик международной школы Haileybury Almaty, организатор NSB 2025 и AMB 2025, Бронзовый медалист Республиканской Олимпиады по математике 2025, Серебрянный медалист Республиканского Конкурса Научных Проектов.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "",
+      "linkedin": "",
+      "tg": "@quemiras1762"
+    },
+    {
       "name": "Амирлан Аманжолов",
       "role": "Организатор сообщества Maths Battles",
-      "description": "ответственный за организацию турнира и подбор задач. Обладатель гранта Haileybury Almaty, победитель Республиканской олимпиады по математике, серебряный призер Международной Математической Олимпиады 2024 и 2025 годов, член национальной сборной РК.",
+      "description": "Обладатель гранта Haileybury Almaty, победитель Республиканской олимпиады по математике, серебряный призер Международной Математической Олимпиады 2024 и 2025 годов, член национальной сборной РК.",
       "photo": "Amirlan.jpg",
       "mail": "a.amanzholov@mathbattles.org",
       "inst": "https://www.instagram.com/amirlanamanzholov/",

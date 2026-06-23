@@ -1,9 +1,89 @@
 {
   "team": [
     {
+      "name": "Зиманова Биназир",
+      "role": "Maths Battles қауымдастығының бас ұйымдастырушысы",
+      "description": "Алматы қаласындағы РФММ оқушысы, 2025 және 2026 жылғы Қыздарға арналған халықаралық математикалық олимпиаданың қола жүлдегері.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/lori_binazir?igsh=ZGFrdGlpa2lkYmox",
+      "linkedin": "",
+      "tg": "https://t.me/Osmium_1507"
+    },
+    {
+      "name": "Боровских Елизавета",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/kakouto_liza_?igsh=cTVxN3h4MWc4NWgy&utm_source=qr",
+      "linkedin": "",
+      "tg": "https://t.me/bhgtfyd"
+    },
+    {
+      "name": "Асылхан Әлижан",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "TAMOS Education халықаралық мектебінің оқушысы.",
+      "photo": "placeholder.jpg",
+      "mail": "assylkhanalizhan@mail.ru",
+      "inst": "https://www.instagram.com/alizhan_a3?igsh=MTZsbnN5NHQ2eTF4ZQ==",
+      "linkedin": "",
+      "tg": "https://t.me/A1i3han"
+    },
+    {
+      "name": "Назарәлі Рамазан",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Алматы қаласындағы РФММ оқушысы, Қыздарға арналған халықаралық математикалық олимпиаданың 2026 жылғы қола жүлдегері, V Республикалық ғылыми олимпиаданың абсолют жеңімпазы, KBO 2025 күміс жүлдегері.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/nzrxwxn?igsh=MWFrZTZndjFpZjExeQ%3D%3D&utm_source=qr",
+      "linkedin": "https://www.linkedin.com/in/nazarali-ramazan-66069a385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "tg": "https://t.me/nzrxwxb"
+    },
+    {
+      "name": "Зере Назарбекқызы",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Алматы қаласындағы РФММ оқушысы, Республикалық физика олимпиадасының облыстық кезеңінің қола және күміс жүлдегері, KBO 2025 қола жүлдегері.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/zerenazarbekkyzy?igsh=MWI2cnQ1eWI0Z2FxdA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Аблай Жасұлан",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Алматы қаласындағы РФММ оқушысы.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/azhishkaa?igsh=MTg2azdpbXVwcDR1bw==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Толегенов Давид",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Алматы қаласындағы №121 жалпы білім беретін мектептің оқушысы, 7–9 сыныптар арасында информатикадан республикалық олимпиадалардың бірнеше дүркін 2 және 3 орын иегері.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/asm.tangent?igsh=MTJtcGtscTFxdmFzOA==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Базарбай Мирас",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Haileybury Almaty халықаралық мектебінің оқушысы, NSB 2025 және AMB 2025 ұйымдастырушысы, 2025 жылғы Республикалық математика олимпиадасының қола жүлдегері, Республикалық ғылыми жобалар конкурсының күміс жүлдегері.",
+      "photo": "placeholder.jpg",
+      "mail": "",
+      "inst": "",
+      "linkedin": "",
+      "tg": "@quemiras1762"
+    },
+    {
       "name": "Амирлан Аманжолов",
-      "role": "Maths Battles қоғамының бас ұйымдастырушы",
-      "description": "турнирді ұйымдастыру және есептерді іріктеуге жауапты. Haileybury Almaty грант иегері, Республикалық математика олимпиадасының жеңімпазы, 2025 және 2024 жылғы Халықаралық математика олимпиадасының күміс жүлдегері, Қазақстан құрамасының мүшесі.",
+      "role": "Maths Battles қауымдастығының ұйымдастырушысы",
+      "description": "Haileybury Almaty грантының иегері, Республикалық математика олимпиадасының жеңімпазы, 2024 және 2025 жылдардағы Халықаралық математикалық олимпиаданың күміс жүлдегері, Қазақстан ұлттық құрамасының мүшесі.",
       "photo": "Amirlan.jpg",
       "mail": "a.amanzholov@mathbattles.org",
       "inst": "https://www.instagram.com/amirlanamanzholov/",
