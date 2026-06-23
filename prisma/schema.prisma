@@ -4,6 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  previewFeatures = ["driverAdapters"]
   url      = "postgresql://neondb_owner:npg_ke67dSwusvgL@ep-hidden-frog-atjnd7wc.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require"
 }
 
