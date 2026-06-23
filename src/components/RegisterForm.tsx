@@ -10,7 +10,6 @@ const sectionTitle = "text-xs font-semibold text-neutral-400 uppercase tracking-
 
 export default function RegisterForm() {
     const t = useTranslations("registerform");
-    const errorT = useTranslations("errors");
     const locale = useLocale();
     const [showMember4, setShowMember4] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -156,7 +155,7 @@ export default function RegisterForm() {
     }
 
     return (
-        <form onSubmit={handleFormSubmit} className="max-w-3xl mx-auto space-y-8 text-neutral-800 bg-white">
+        <form onSubmit={handleFormSubmit} className="col-span-12 md:col-span-8 md:col-start-3 w-full max-w-3xl mx-auto space-y-8 text-neutral-800 bg-white relative z-20">
 
             {error && (
                 <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-700">
@@ -193,36 +192,36 @@ export default function RegisterForm() {
                 </div>
             </div>
 
-                <div className="bg-neutral-50 border border-neutral-100 rounded-xl p-5 space-y-4">
-                    <p className={sectionTitle}>{t("teamLeader")}</p>
-                    <p className="text-xs text-neutral-600 leading-relaxed bg-white p-3 rounded-lg border border-neutral-200">
-                        {t("teamLeaderDescription")}
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        <div>
-                            <label className={labelCls}>{t("leaderFullName")} <span className="text-red-400">*</span></label>
-                            <input name="leaderName" type="text" required className={inputCls} placeholder={t("namePlaceholder")} />
-                        </div>
-                        <div>
-                            <label className={labelCls}>{t("leaderEmail")} <span className="text-red-400">*</span></label>
-                            <input name="leaderEmail" type="email" required className={inputCls} placeholder={t("emailPlaceholder")} />
-                        </div>
-                        <div>
-                            <label className={labelCls}>{t("leaderPhone")} <span className="text-red-400">*</span></label>
-                            <input name="leaderPhone" type="text" required className={inputCls} placeholder={t("phonePlaceholder")} />
-                        </div>
+            <div className="bg-neutral-50 border border-neutral-100 rounded-xl p-5 space-y-4">
+                <p className={sectionTitle}>{t("teamLeader")}</p>
+                <p className="text-xs text-neutral-600 leading-relaxed bg-white p-3 rounded-lg border border-neutral-200">
+                    {t("teamLeaderDescription")}
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div>
+                        <label className={labelCls}>{t("leaderFullName")} <span className="text-red-400">*</span></label>
+                        <input name="leaderName" type="text" required className={inputCls} placeholder={t("namePlaceholder")} />
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        <div>
-                            <label className={labelCls}>{t("leaderCountry")} <span className="text-red-400">*</span></label>
-                            <input name="leaderCountry" type="text" required className={inputCls} placeholder={t("countryPlaceholder")} />
-                        </div>
-                        <div>
-                            <label className={labelCls}>{t("leaderCity")} <span className="text-red-400">*</span></label>
-                            <input name="leaderCity" type="text" required className={inputCls} placeholder={t("cityPlaceholder")} />
-                        </div>
+                    <div>
+                        <label className={labelCls}>{t("leaderEmail")} <span className="text-red-400">*</span></label>
+                        <input name="leaderEmail" type="email" required className={inputCls} placeholder={t("emailPlaceholder")} />
+                    </div>
+                    <div>
+                        <label className={labelCls}>{t("leaderPhone")} <span className="text-red-400">*</span></label>
+                        <input name="leaderPhone" type="text" required className={inputCls} placeholder={t("phonePlaceholder")} />
                     </div>
                 </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div>
+                        <label className={labelCls}>{t("leaderCountry")} <span className="text-red-400">*</span></label>
+                        <input name="leaderCountry" type="text" required className={inputCls} placeholder={t("countryPlaceholder")} />
+                    </div>
+                    <div>
+                        <label className={labelCls}>{t("leaderCity")} <span className="text-red-400">*</span></label>
+                        <input name="leaderCity" type="text" required className={inputCls} placeholder={t("cityPlaceholder")} />
+                    </div>
+                </div>
+            </div>
             
 
             <div className="space-y-3">
@@ -263,7 +262,7 @@ export default function RegisterForm() {
                 </span>
             </label>
 
-                        <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
+            <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                 <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                 <span className="text-xs text-neutral-500 leading-relaxed">
                     {t("dataProcessingConfirm")}{" "}
