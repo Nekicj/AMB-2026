@@ -1,11 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const inputCls = "w-full h-11 border border-neutral-200 rounded-lg px-3 text-sm bg-white text-neutral-900 outline-none focus:ring-2 focus:ring-[#172967] focus:border-transparent transition-all placeholder:text-neutral-400";
 const labelCls = "block text-xs font-medium text-neutral-500 mb-1.5 uppercase tracking-wide";
 
 export default function ParentConsentForm() {
+    const t = useTranslations("parentConsent");
+    const errorT = useTranslations("errors");
     const [isRepresentative, setIsRepresentative] = useState(false);
     const [statusMessage, setStatusMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
     const [loading, setLoading] = useState(false);
@@ -34,10 +37,10 @@ export default function ParentConsentForm() {
 
             if (!res.ok) {
                 const json = await res.json();
-                throw new Error(json.error || "Ошибка при отправке");
+                throw new Error(json.error || t("errorSending"));
             }
 
-            setStatusMessage({ type: "success", text: "Согласие успешно отправлено и связано с участником!" });
+            setStatusMessage({ type: "success", text: t("successMessage") });
             (e.target as HTMLFormElement).reset();
             setIsRepresentative(false);
         } catch (err: any) {
@@ -62,10 +65,10 @@ export default function ParentConsentForm() {
 
             <form onSubmit={onSubmit} className="space-y-6">
                 <div>
-                    <label className={labelCls}>Телефон или email участника <span className="text-red-400">*</span></label>
+                    <label className={labelCls}>{t("childIdentifier")} <span className="text-red-400">*</span></label>
                     <input name="childIdentifier" type="text" required className={inputCls} placeholder="+7 (700) 000-00-00 или email" />
                     <p className="text-xs text-neutral-400 mt-1.5 leading-relaxed">
-                        Укажите тот телефон или email, который ребёнок ввёл при регистрации команды — по нему мы свяжем анкеты в базе.
+                        {t("childIdentifierHint")}
                     </p>
                 </div>
 
@@ -73,16 +76,16 @@ export default function ParentConsentForm() {
 
                 <div className="space-y-3">
                     <div>
-                        <label className={labelCls}>ФИО представителя <span className="text-red-400">*</span></label>
+                        <label className={labelCls}>{t("parentName")} <span className="text-red-400">*</span></label>
                         <input name="parentName" type="text" required className={inputCls} placeholder="Иванова Мария Петровна" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <label className={labelCls}>Email представителя <span className="text-red-400">*</span></label>
+                            <label className={labelCls}>{t("parentEmail")} <span className="text-red-400">*</span></label>
                             <input name="parentEmail" type="email" required className={inputCls} placeholder="email@example.com" />
                         </div>
                         <div>
-                            <label className={labelCls}>Телефон представителя <span className="text-red-400">*</span></label>
+                            <label className={labelCls}>{t("parentPhone")} <span className="text-red-400">*</span></label>
                             <input name="parentPhone" type="text" required className={inputCls} placeholder="+7 (707) 123-4567" />
                         </div>
                     </div>
@@ -98,9 +101,9 @@ export default function ParentConsentForm() {
                         className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0"
                     />
                     <div>
-                        <p className="text-sm font-medium text-neutral-800">Я являюсь доверенным лицом</p>
+                        <p className="text-sm font-medium text-neutral-800">{t("isRepresentative")}</p>
                         <p className="text-xs text-neutral-400 mt-0.5 leading-relaxed">
-                            Поставьте галочку, если вы сопровождающий или учитель по нотариальной доверенности
+                            {t("isRepresentativeHint")}
                         </p>
                     </div>
                 </label>
@@ -108,9 +111,9 @@ export default function ParentConsentForm() {
                 {isRepresentative && (
                     <div className="bg-blue-50 border border-blue-100 rounded-xl p-4">
                         <label className={labelCls + " text-blue-700"}>
-                            Номер нотариальной доверенности <span className="text-red-400">*</span>
+                            {t("poaNumber")} <span className="text-red-400">*</span>
                         </label>
-                        <input name="poaNumber" type="text" required={isRepresentative} className={inputCls} placeholder="Например, №12345-XYZ" />
+                        <input name="poaNumber" type="text" required={isRepresentative} className={inputCls} placeholder={t("poaNumberPlaceholder")} />
                     </div>
                 )}
 
@@ -120,19 +123,19 @@ export default function ParentConsentForm() {
                     <label className="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                         <span className="text-xs text-neutral-500 leading-relaxed">
-                            Я подтверждаю согласие на использование системы AutoProctor и обработку связанных персональных данных моего ребёнка. <span className="text-red-400">*</span>
+                            {t("autoProcorConsent")} <span className="text-red-400">*</span>
                         </span>
                     </label>
                     <label className="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                         <span className="text-xs text-neutral-500 leading-relaxed">
-                            Даю согласие на сбор, обработку и хранение моих персональных данных в соответствии с регламентом турнира. <span className="text-red-400">*</span>
+                            {t("dataProcessingConsent")} <span className="text-red-400">*</span>
                         </span>
                     </label>
                     <label className="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                         <span className="text-xs text-neutral-500 leading-relaxed">
-                            Даю согласие на сбор, обработку и хранение Персональных Данных в соответствии с Перечнем №03-08/03. С{" "}
+                            {t("fundDataProcessingConsent")}{" "}
                             <a href="https://drive.google.com/drive/folders/1eG222s_rf3x5S2C8ITp7f4bvpoxTlfxb" target="_blank" rel="noopener noreferrer" className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors">
                                 политикой работы с ПД Фонда и перечнем
                             </a>
@@ -146,7 +149,7 @@ export default function ParentConsentForm() {
                     disabled={loading}
                     className="w-full h-12 bg-[#172967] hover:bg-[#0f1c4a] disabled:opacity-60 disabled:cursor-not-allowed text-white rounded-xl text-sm font-semibold transition-colors"
                 >
-                    {loading ? "Отправка..." : "Отправить согласие"}
+                    {loading ? t("submitting") : t("submit")}
                 </button>
             </form>
         </div>
