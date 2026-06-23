@@ -62,6 +62,7 @@
   },
   "registration": {
     "registration": "Registration Form for Almaty Maths Battles 2026",
+    "registrationSubtitle": "Filling the Form",
     "registrationContext": "Before filling out this form, make sure you've read and understood the <link>rules of the tournament</link>. You can edit your response after filling out the form via a letter from Google Forms that will be sent to your email. Please note that teams must consist of either 4 or 5 participants.",
     "loading": "Loading..."
   },
