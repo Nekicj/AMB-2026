@@ -9,7 +9,6 @@ const sectionTitle = "text-xs font-semibold text-neutral-400 uppercase tracking-
 
 export default function RegisterForm() {
     const locale = useLocale();
-    const [hasLeader, setHasLeader] = useState("yes");
     const [showMember4, setShowMember4] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [league, setLeague] = useState("junior");
@@ -188,19 +187,16 @@ export default function RegisterForm() {
                             Все участники команды должны владеть выбранным языком участия.
                         </p>
                     </div>
-                    <div>
-                        <label className={labelCls}>Наличие руководителя <span className="text-red-400">*</span></label>
-                        <select name="hasLeader" value={hasLeader} onChange={(e) => setHasLeader(e.target.value)} className={inputCls}>
-                            <option value="yes">Да</option>
-                            <option value="no">Нет</option>
-                        </select>
-                    </div>
                 </div>
             </div>
 
-            {hasLeader === "yes" && (
                 <div className="bg-neutral-50 border border-neutral-100 rounded-xl p-5 space-y-4">
                     <p className={sectionTitle}>Руководитель команды</p>
+                    <p className="text-xs text-neutral-600 leading-relaxed bg-white p-3 rounded-lg border border-neutral-200">
+                        Руководитель команды — лицо, ответственное за команду. Не может быть участником команды или несовершеннолетним. 
+                        Должен быть совершеннолетним с нотариально заверенной доверенностью от родителей несовершеннолетних участников. 
+                        Может быть преподавателем, сотрудником школы или любым уполномоченным взрослым. Обязателен для всех команд.
+                    </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div>
                             <label className={labelCls}>ФИО <span className="text-red-400">*</span></label>
@@ -226,7 +222,7 @@ export default function RegisterForm() {
                         </div>
                     </div>
                 </div>
-            )}
+            
 
             <div className="space-y-3">
                 <p className={sectionTitle}>Участники</p>
@@ -266,14 +262,28 @@ export default function RegisterForm() {
                 </span>
             </label>
 
-            <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
+                        <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                 <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                 <span className="text-xs text-neutral-500 leading-relaxed">
-                    Даю согласие на сбор, обработку и хранение Персональных Данных в соответствии с Перечнем №03-08/03. С{" "}
-                    <a href="https://drive.google.com/drive/folders/1eG222s_rf3x5S2C8ITp7f4bvpoxTlfxb" target="_blank" rel="noopener noreferrer" className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors">
+                    Даю согласие на сбор, обработку и хранение Персональных Данных в соответствии с Перечнем №03-08/05. С{" "}
+                    <a
+                        href="https://drive.google.com/drive/folders/1uezUXIM8UVWG7S7yJooWESq0c8vyUzCy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors"
+                    >
                         политикой работы с ПД Фонда и перечнем
                     </a>
-                    {" "}можно ознакомиться на сайте Фонда. <span className="text-red-400">*</span>
+                    {" "}можно ознакомиться на сайте{" "}
+                    <a
+                        href="https://bc-pf.org/personaldata"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors"
+                    >
+                        Фонда
+                    </a>.
+                    <span className="text-red-400"> *</span>
                 </span>
             </label>
 
