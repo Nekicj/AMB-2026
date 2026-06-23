@@ -36,7 +36,7 @@ export default function RegisterForm() {
             if (!res.ok) {
                 let errorMessage = `Ошибка сервера (${res.status})`;
                 const contentType = res.headers.get("content-type");
-            
+
                 if (contentType && contentType.includes("application/json")) {
                     const data = await res.json();
                     errorMessage = data.error || errorMessage;
@@ -47,6 +47,9 @@ export default function RegisterForm() {
 
                 throw new Error(errorMessage);
             }
+        
+            setIsSubmitted(true);
+
         } catch (err: any) {
             setError(err.message);
         } finally {
