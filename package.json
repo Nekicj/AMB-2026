@@ -14,8 +14,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@neondatabase/serverless": "^0.10.4",
     "@prisma/client": "^6.19.3",
-    "@prisma/config": "^7.8.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.7",
     "i18n": "^0.15.1",
@@ -25,13 +25,15 @@
     "next-intl": "^4.13.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-social-icons": "^6.22.0"
+    "react-social-icons": "^6.22.0",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/ws": "^8.5.14",
     "dotenv": "^16.4.7",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
