@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useLocale } from "next-intl";
 
@@ -8,6 +9,8 @@ const labelCls = "block text-xs font-medium text-neutral-500 mb-1.5 uppercase tr
 const sectionTitle = "text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-4 pb-2 border-b border-neutral-100";
 
 export default function RegisterForm() {
+    const t = useTranslations("registerform");
+    const errorT = useTranslations("errors");
     const locale = useLocale();
     const [showMember4, setShowMember4] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -33,7 +36,7 @@ export default function RegisterForm() {
             });
 
             if (!res.ok) {
-                let errorMessage = `Ошибка сервера (${res.status})`;
+                let errorMessage = `Server error (${res.status})`;
                 const contentType = res.headers.get("content-type");
 
                 if (contentType && contentType.includes("application/json")) {
@@ -41,7 +44,7 @@ export default function RegisterForm() {
                     errorMessage = data.error || errorMessage;
                 } else {
                     const textError = await res.text();
-                    console.error("Полный ответ сервера (HTML/Текст):", textError);
+                    console.error("Full server response (HTML/Text):", textError);
                 }
 
                 throw new Error(errorMessage);
@@ -74,9 +77,9 @@ export default function RegisterForm() {
             const val = parseInt(target.value);
             
             if (league === "junior" && val > 9) {
-                target.setCustomValidity("Для юниоров класс не может быть больше 9");
+                target.setCustomValidity(t("max_grade"));
             } else if (val < 1) {
-                target.setCustomValidity("Класс не может быть меньше 1");
+                target.setCustomValidity(t("min_grade"));
             } else {
                 target.setCustomValidity("");
             }
@@ -93,19 +96,19 @@ export default function RegisterForm() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div>
-                        <label className={labelCls}>ФИО {!optional && <span className="text-red-400">*</span>}</label>
-                        <input name={`${prefix}Name`} type="text" required={!optional} className={inputCls} placeholder="Иванов Иван Иванович" />
+                        <label className={labelCls}>{t("fullName")} {!optional && <span className="text-red-400">*</span>}</label>
+                        <input name={`${prefix}Name`} type="text" required={!optional} className={inputCls} placeholder={t("namePlaceholder")} />
                     </div>
                     <div>
-                        <label className={labelCls}>Школа {!optional && <span className="text-red-400">*</span>}</label>
-                        <input name={`${prefix}School`} type="text" required={!optional} className={inputCls} placeholder="Название школы" />
+                        <label className={labelCls}>{t("school")} {!optional && <span className="text-red-400">*</span>}</label>
+                        <input name={`${prefix}School`} type="text" required={!optional} className={inputCls} placeholder={t("schoolPlaceholder")} />
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     <div>
                         <label className={labelCls}>
-                            Класс {!optional && <span className="text-red-400">*</span>}
-                            {league === "junior" && <span className="ml-1 normal-case text-neutral-400">(макс. 9)</span>}
+                            {t("grade")} {!optional && <span className="text-red-400">*</span>}
+                            {league === "junior" && <span className="ml-1 normal-case text-neutral-400">{t("gradeHintJunior")}</span>}
                         </label>
                         <input
                             name={`${prefix}Grade`}
@@ -116,16 +119,16 @@ export default function RegisterForm() {
                             onChange={validateGrade}
                             onInput={validateGrade}
                             className={inputCls}
-                            placeholder={league === "junior" ? "1–9" : "1–11"}
+                            placeholder={league === "junior" ? t("gradePlaceholderJunior") : t("gradePlaceholderSenior")}
                         />
                     </div>
                     <div>
-                        <label className={labelCls}>Email {!optional && <span className="text-red-400">*</span>}</label>
-                        <input name={`${prefix}Email`} type="email" required={!optional} className={inputCls} placeholder="email@example.com" />
+                        <label className={labelCls}>{t("email")} {!optional && <span className="text-red-400">*</span>}</label>
+                        <input name={`${prefix}Email`} type="email" required={!optional} className={inputCls} placeholder={t("emailPlaceholder")} />
                     </div>
                     <div>
-                        <label className={labelCls}>Телефон {!optional && <span className="text-red-400">*</span>}</label>
-                        <input name={`${prefix}Phone`} type="text" required={!optional} className={inputCls} placeholder="+7 (700) 000-00-00" />
+                        <label className={labelCls}>{t("phone")} {!optional && <span className="text-red-400">*</span>}</label>
+                        <input name={`${prefix}Phone`} type="text" required={!optional} className={inputCls} placeholder={t("phonePlaceholder")} />
                     </div>
                 </div>
             </div>
@@ -135,18 +138,18 @@ export default function RegisterForm() {
     if (isSubmitted) {
         return (
             <div className="max-w-3xl mx-auto p-8 bg-amber-50 border border-amber-200 rounded-2xl text-neutral-800 space-y-4">
-                <h3 className="text-xl font-semibold text-amber-800">Команда зарегистрирована — осталось одно действие!</h3>
+                <h3 className="text-xl font-semibold text-amber-800">{t("submitted")}</h3>
                 <p className="text-sm text-neutral-700">
-                    Чтобы завершить регистрацию, родитель/опекун или доверенное лицо каждого участника должен заполнить отдельную форму согласия на AutoProctor.
+                    {t("submittedDescription")}
                 </p>
                 <p className="text-sm text-neutral-500">
-                    Перешлите ссылку ниже и напомните указать ваш номер телефона или email — так мы свяжем анкеты в базе:
+                    {t("submittedHint")}
                 </p>
                 <a
                     href={parentConsentUrl}
                     className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-colors text-sm"
                 >
-                    Форма согласия →
+                    {t("parentConsentForm")}
                 </a>
             </div>
         );
@@ -162,90 +165,88 @@ export default function RegisterForm() {
             )}
 
             <div className="space-y-4">
-                <p className={sectionTitle}>Основная информация</p>
+                <p className={sectionTitle}>{t("basicInfo")}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div>
-                        <label className={labelCls}>Название команды <span className="text-red-400">*</span></label>
-                        <input name="teamName" type="text" required className={inputCls} placeholder="Введите название" />
+                        <label className={labelCls}>{t("teamName")} <span className="text-red-400">*</span></label>
+                        <input name="teamName" type="text" required className={inputCls} placeholder={t("teamNamePlaceholder")} />
                     </div>
                     <div>
-                        <label className={labelCls}>Лига <span className="text-red-400">*</span></label>
+                        <label className={labelCls}>{t("league")} <span className="text-red-400">*</span></label>
                         <select name="league" value={league} onChange={(e) => setLeague(e.target.value)} className={inputCls}>
-                            <option value="junior">Юниоры (Junior)</option>
-                            <option value="senior">Сениоры (Senior)</option>
+                            <option value="junior">{t("junior")}</option>
+                            <option value="senior">{t("senior")}</option>
                         </select>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div>
-                        <label className={labelCls}>Язык участия <span className="text-red-400">*</span></label>
+                        <label className={labelCls}>{t("language")} <span className="text-red-400">*</span></label>
                         <select name="language" className={inputCls}>
-                            <option value="ru">Русский</option>
-                            <option value="kz">Казахский</option>
+                            <option value="ru">{t("russian")}</option>
+                            <option value="kz">{t("kazakh")}</option>
                         </select>
                         <p className="text-xs text-neutral-400 mt-1.5 leading-relaxed">
-                            Все участники команды должны владеть выбранным языком участия.
+                            {t("languageHint")}
                         </p>
                     </div>
                 </div>
             </div>
 
                 <div className="bg-neutral-50 border border-neutral-100 rounded-xl p-5 space-y-4">
-                    <p className={sectionTitle}>Руководитель команды</p>
+                    <p className={sectionTitle}>{t("teamLeader")}</p>
                     <p className="text-xs text-neutral-600 leading-relaxed bg-white p-3 rounded-lg border border-neutral-200">
-                        Руководитель команды — лицо, ответственное за команду. Не может быть участником команды или несовершеннолетним. 
-                        Должен быть совершеннолетним с нотариально заверенной доверенностью от родителей несовершеннолетних участников. 
-                        Может быть преподавателем, сотрудником школы или любым уполномоченным взрослым. Обязателен для всех команд.
+                        {t("teamLeaderDescription")}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div>
-                            <label className={labelCls}>ФИО <span className="text-red-400">*</span></label>
-                            <input name="leaderName" type="text" required className={inputCls} placeholder="Иванов Иван Иванович" />
+                            <label className={labelCls}>{t("leaderFullName")} <span className="text-red-400">*</span></label>
+                            <input name="leaderName" type="text" required className={inputCls} placeholder={t("namePlaceholder")} />
                         </div>
                         <div>
-                            <label className={labelCls}>Email <span className="text-red-400">*</span></label>
-                            <input name="leaderEmail" type="email" required className={inputCls} placeholder="email@example.com" />
+                            <label className={labelCls}>{t("leaderEmail")} <span className="text-red-400">*</span></label>
+                            <input name="leaderEmail" type="email" required className={inputCls} placeholder={t("emailPlaceholder")} />
                         </div>
                         <div>
-                            <label className={labelCls}>Телефон <span className="text-red-400">*</span></label>
-                            <input name="leaderPhone" type="text" required className={inputCls} placeholder="+7 (700) 000-00-00" />
+                            <label className={labelCls}>{t("leaderPhone")} <span className="text-red-400">*</span></label>
+                            <input name="leaderPhone" type="text" required className={inputCls} placeholder={t("phonePlaceholder")} />
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <label className={labelCls}>Страна <span className="text-red-400">*</span></label>
-                            <input name="leaderCountry" type="text" required className={inputCls} placeholder="Казахстан" />
+                            <label className={labelCls}>{t("leaderCountry")} <span className="text-red-400">*</span></label>
+                            <input name="leaderCountry" type="text" required className={inputCls} placeholder={t("countryPlaceholder")} />
                         </div>
                         <div>
-                            <label className={labelCls}>Город <span className="text-red-400">*</span></label>
-                            <input name="leaderCity" type="text" required className={inputCls} placeholder="Алматы" />
+                            <label className={labelCls}>{t("leaderCity")} <span className="text-red-400">*</span></label>
+                            <input name="leaderCity" type="text" required className={inputCls} placeholder={t("cityPlaceholder")} />
                         </div>
                     </div>
                 </div>
             
 
             <div className="space-y-3">
-                <p className={sectionTitle}>Участники</p>
-                <MemberBlock title="Капитан команды" badge="Участник 1" prefix="captain" />
-                <MemberBlock title="Участник 2" badge="Обязательно" prefix="member1" />
-                <MemberBlock title="Участник 3" badge="Обязательно" prefix="member2" />
+                <p className={sectionTitle}>{t("participants")}</p>
+                <MemberBlock title={t("teamCaptain")} badge={t("participant1")} prefix="captain" />
+                <MemberBlock title={t("participant2")} badge={t("mandatory")} prefix="member1" />
+                <MemberBlock title={t("participant3")} badge={t("mandatory")} prefix="member2" />
                 {!showMember4 ? (
                     <button
                         type="button"
                         onClick={() => setShowMember4(true)}
                         className="w-full border border-dashed border-neutral-200 rounded-xl py-3 text-sm text-neutral-400 hover:border-neutral-300 hover:text-neutral-600 transition-colors flex items-center justify-center gap-1.5"
                     >
-                        <span className="text-lg leading-none">+</span> Добавить участника 4
+                        <span className="text-lg leading-none">+</span> {t("addParticipant4")}
                     </button>
                 ) : (
                     <MemberBlock
-                        title="Участник 4"
-                        badge="Необязательно"
+                        title={t("participant4")}
+                        badge={t("optional")}
                         prefix="member3"
                         optional
                         extra={
                             <button type="button" onClick={() => setShowMember4(false)} className="ml-auto text-xs text-red-400 hover:text-red-600 transition-colors">
-                                Убрать
+                                {t("remove")}
                             </button>
                         }
                     />
@@ -255,34 +256,34 @@ export default function RegisterForm() {
             <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                 <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                 <span className="text-xs text-neutral-500 leading-relaxed">
-                    Заполняя форму, члены команды подтверждают, что ознакомлены с{" "}
+                    {t("rulesConfirm")}{" "}
                     <a href="https://drive.google.com/drive/folders/1KraCtoyMrqVlCTAVRI8POc3iqAXTugrZ" target="_blank" rel="noopener noreferrer" className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors">
-                        основным регламентом научных боёв
-                    </a>. <span className="text-red-400">*</span>
+                        {t("rulesLink")}
+                    </a>{t("text7")} <span className="text-red-400">*</span>
                 </span>
             </label>
 
                         <label className="flex items-start gap-3 cursor-pointer p-4 bg-neutral-50 rounded-xl border border-neutral-100">
                 <input type="checkbox" required className="mt-0.5 w-4 h-4 accent-[#172967] flex-shrink-0" />
                 <span className="text-xs text-neutral-500 leading-relaxed">
-                    Даю согласие на сбор, обработку и хранение Персональных Данных в соответствии с Перечнем №03-08/05. С{" "}
+                    {t("dataProcessingConfirm")}{" "}
                     <a
                         href="https://drive.google.com/drive/folders/1uezUXIM8UVWG7S7yJooWESq0c8vyUzCy"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors"
                     >
-                        политикой работы с ПД Фонда и перечнем
+                        {t("text1")}
                     </a>
-                    {" "}можно ознакомиться на сайте{" "}
+                    {" "}{t("text2")}{" "}
                     <a
                         href="https://bc-pf.org/personaldata"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors"
                     >
-                        Фонда
-                    </a>.
+                        {t("text5")}
+                    </a>{t("text6")}
                     <span className="text-red-400"> *</span>
                 </span>
             </label>
@@ -292,7 +293,7 @@ export default function RegisterForm() {
                 disabled={loading}
                 className="w-full h-12 bg-[#172967] hover:bg-[#0f1c4a] disabled:opacity-60 disabled:cursor-not-allowed text-white rounded-xl text-sm font-semibold transition-colors"
             >
-                {loading ? "Отправка..." : "Зарегистрировать команду"}
+                {loading ? t("submitting") : t("submit")}
             </button>
         </form>
     );

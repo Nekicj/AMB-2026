@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
         const { childIdentifier, parentName, parentEmail, parentPhone, isRepresentative, poaNumber } = body;
 
         if (!childIdentifier || !parentName || !parentEmail || !parentPhone) {
-            return NextResponse.json({ error: "Заполните все обязательные поля" }, { status: 400 });
+            return NextResponse.json({ error: "Please fill in all required fields" }, { status: 400 });
         }
 
         const member = await db.teamMember.findFirst({
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
         if (!member) {
             return NextResponse.json(
-                { error: "Участник с таким email или телефоном не найден. Проверьте данные." },
+                { error: "Participant with this email or phone number not found. Please check your data." },
                 { status: 404 }
             );
         }
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
         if (existing) {
             return NextResponse.json(
-                { error: "Согласие для этого участника уже было отправлено ранее." },
+                { error: "Consent for this participant has already been submitted." },
                 { status: 409 }
             );
         }
@@ -51,6 +51,6 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true });
     } catch (err: any) {
         console.error("[parent-consent]", err);
-        return NextResponse.json({ error: "Ошибка сервера" }, { status: 500 });
+        return NextResponse.json({ error: "Server error" }, { status: 500 });
     }
 }

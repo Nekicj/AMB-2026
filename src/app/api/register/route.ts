@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
         } = body;
 
         if (!teamName || !captainName || !member1Name || !member2Name) {
-            return NextResponse.json({ error: "Заполните все обязательные поля" }, { status: 400 });
+            return NextResponse.json({ error: "Please fill in all required fields" }, { status: 400 });
         }
 
         const members = [
@@ -42,6 +42,6 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true, teamId: team.id });
     } catch (err: any) {
         console.error("[register]", err);
-        return NextResponse.json({ error: "Ошибка сервера" }, { status: 500 });
+        return NextResponse.json({ error: "Server error" }, { status: 500 });
     }
 }

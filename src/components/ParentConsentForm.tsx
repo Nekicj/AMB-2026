@@ -66,7 +66,7 @@ export default function ParentConsentForm() {
             <form onSubmit={onSubmit} className="space-y-6">
                 <div>
                     <label className={labelCls}>{t("childIdentifier")} <span className="text-red-400">*</span></label>
-                    <input name="childIdentifier" type="text" required className={inputCls} placeholder="+7 (700) 000-00-00 или email" />
+                    <input name="childIdentifier" type="text" required className={inputCls} placeholder={t("childIdentifierPlaceholder")} />
                     <p className="text-xs text-neutral-400 mt-1.5 leading-relaxed">
                         {t("childIdentifierHint")}
                     </p>
@@ -77,16 +77,16 @@ export default function ParentConsentForm() {
                 <div className="space-y-3">
                     <div>
                         <label className={labelCls}>{t("parentName")} <span className="text-red-400">*</span></label>
-                        <input name="parentName" type="text" required className={inputCls} placeholder="Иванова Мария Петровна" />
+                        <input name="parentName" type="text" required className={inputCls} placeholder={t("parentNamePlaceholder")} />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
                             <label className={labelCls}>{t("parentEmail")} <span className="text-red-400">*</span></label>
-                            <input name="parentEmail" type="email" required className={inputCls} placeholder="email@example.com" />
+                            <input name="parentEmail" type="email" required className={inputCls} placeholder={t("parentEmailPlaceholder")} />
                         </div>
                         <div>
                             <label className={labelCls}>{t("parentPhone")} <span className="text-red-400">*</span></label>
-                            <input name="parentPhone" type="text" required className={inputCls} placeholder="+7 (707) 123-4567" />
+                            <input name="parentPhone" type="text" required className={inputCls} placeholder={t("parentPhonePlaceholder")} />
                         </div>
                     </div>
                 </div>
@@ -137,9 +137,9 @@ export default function ParentConsentForm() {
                         <span className="text-xs text-neutral-500 leading-relaxed">
                             {t("fundDataProcessingConsent")}{" "}
                             <a href="https://drive.google.com/drive/folders/1eG222s_rf3x5S2C8ITp7f4bvpoxTlfxb" target="_blank" rel="noopener noreferrer" className="underline text-[#172967] hover:text-[#0f1c4a] transition-colors">
-                                политикой работы с ПД Фонда и перечнем
+                                {t("text3")}
                             </a>
-                            {" "}можно ознакомиться на сайте Фонда. <span className="text-red-400">*</span>
+                            {" "}{t("text4")}<span className="text-red-400">*</span>
                         </span>
                     </label>
                 </div>
