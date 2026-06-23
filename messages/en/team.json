@@ -1,74 +1,84 @@
 {
   "team": [
     {
-      "name": "Amirlan Amanzholov",
+      "name": "Zhassulan Ablay",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at the Republican Physics and Mathematics School, Almaty.",
+      "photo": "Zhassulan.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/azhishkaa?igsh=MTg2azdpbXVwcDR1bw==",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Assylkhan Alizhan",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at the Republican Physics and Mathematics School, bronze medalist at IZhO 2026, ABS 5 of the Republican Science Olympiad, silver medalist at KBO 2025.",
+      "photo": "Assylkhan.jpg",
+      "mail": "assylkhanalizhan@mail.ru",
+      "inst": "https://www.instagram.com/alizhan_a3?igsh=MTZsbnN5NHQ2eTF4ZQ==",
+      "linkedin": "",
+      "tg": "t.me/A1i3han"
+    },
+    {
+      "name": "Binazir Zimanova",
       "role": "Chief organizer of Maths Battles Community",
-      "description": "responsible for tournament organization and problem selection. Scholarship Awardee at Haileybury Almaty, winner of the Republican Olympiad in mathematics, International Math Olympiad 2024 , 2025 silver medalist, member of the national team.",
-      "photo": "Amirlan.jpg",
-      "mail": "a.amanzholov@mathbattles.org",
-      "inst": "https://www.instagram.com/amirlanamanzholov/",
-      "linkedin": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305",
-      "tg": "https://t.me/amirlanv"
-    },
-    {
-      "name": "Timur Murat",
-      "role": "Organizer and head of the academic committee of Maths Battles Community",
-      "description": "responsible for web-development and problem selection. Scholarship Awardee at Haileybury Almaty, Asian Pacific Math Olympiad gold medalist and Balkan Math Olympiad 2024 bronze medalist, member of the national team.",
-      "photo": "Timur.jpg",
-      "mail": "mtimz.1207@gmail.com",
-      "inst": "https://www.instagram.com/tren0d/",
-      "linkedin": "https://www.linkedin.com/in/timur-murat-2a1735333",
-      "tg": "https://t.me/trenod"
-    },
-    {
-      "name": "Gleb Patyrin",
-      "role": "Co-founder and organizer of Maths Battles Community",
-      "description": "Winner of various Math Olympiads, scholarship awardee at Haileybury Almaty and Richmond University.",
-      "photo": "Gleb.jpg",
-      "mail": "glebpatyrin@gmail.com",
-      "inst": "https://www.instagram.com/gleb.patyrin/",
-      "linkedin": "https://www.linkedin.com/in/glebpatyrin/",
-      "tg": "https://t.me/mtxdd"
-    },
-    {
-      "name": "Miron Yurkevich",
-      "role": "Organizer of Maths Battles Community",
-      "description": "Scholarship Awardee at Haileybury Almaty and Cambridge University, winner of prestigious math olympiads, including International Math Olympiad 2022, 2023, 2024 and 2025 silver medals.",
-      "photo": "Miron.webp",
-      "mail": "miron95@battles.kz",
-      "inst": "https://www.instagram.com/mironemiron/",
+      "description": "Student at the Republican Physics and Mathematics School, bronze medalist at IZhO 2025 and 2026.",
+      "photo": "Binazir.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/lori_binazir?igsh=ZGFrdGlpa2lkYmox",
       "linkedin": "",
-      "tg": "https://t.me/mironemiron"
+      "tg": "https://t.me/Osmium_1507"
     },
     {
-      "name": "Alikhan Serikuly",
+      "name": "David Tolegenov",
       "role": "Organizer of Maths Battles Community",
-      "description": "Gold medalist of the Republican Mathematics Olympiad, participant of the Mathematics and Chemistry Olympiads, Scholarship Awardee at Haileybury Almaty and Brown University.",
-      "photo": "Alikhan.webp",
-      "mail": "alikhan@battles.kz",
-      "inst": "https://www.instagram.com/alihan.bebras/",
-      "linkedin": "https://www.linkedin.com/in/alikhan-serikuly-67131627b/",
-      "tg": "https://t.me/alihanbebras"
-    },
-    {
-      "name": "Issatay Jaxykeldinov",
-      "role": "Co-founder of Maths Battles Community",
-      "description": "Scholarship Awardee at CUHK. Alumni of the National School of Physics and Math.",
-      "photo": "Issatay.webp",
-      "mail": "issatay@battles.kz",
-      "inst": "https://www.instagram.com/issatayy/",
-      "linkedin": "https://www.linkedin.com/in/issatay-j/",
-      "tg": "https://t.me/Coolaphrodite"
-    },
-    {
-      "name": "Nazar Berkimbay",
-      "role": "Co-founder of Maths Battles Community",
-      "description": "Student at Ecole Polytechnique with 100% stipend, silver medal at IEO, IZhO",
-      "photo": "Nazar.webp",
-      "mail": "nazar.berkimbay@polytechnique.edu",
-      "inst": "https://www.instagram.com/crazyinmath/",
+      "description": "Student at School №121, Almaty, 2nd–3rd place at national informatics olympiads in grades 7–9.",
+      "photo": "David.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/asm.tangent?igsh=MTJtcGtscTFxdmFzOA==",
       "linkedin": "",
-      "tg": "https://t.me/Nazar1005"
+      "tg": ""
+    },
+    {
+      "name": "Elizaveta Borovskikh",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at TAMOS Education International School.",
+      "photo": "Elizaveta.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/kakouto_liza_?igsh=cTVxN3h4MWc4NWgy&utm_source=qr",
+      "linkedin": "",
+      "tg": "https://t.me/bhgtfyd"
+    },
+    {
+      "name": "Miras Bazarbay",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at Haileybury Almaty, organizer of NSB 2025 and AMB 2025, bronze medalist at the Republican Mathematics Olympiad 2025, silver medalist at the Republican Science Project Competition, Second Prize winner at the 14th European Mathematical Cup.",
+      "photo": "Miras.jpg",
+      "mail": "",
+      "inst": "",
+      "linkedin": "",
+      "tg": ""
+    },
+    {
+      "name": "Ramazan Nazarali",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at the Republican Physics and Mathematics School, Almaty, bronze and silver medalist at the regional stage of the Republican Physics Olympiad, bronze medalist at KBO 2025.",
+      "photo": "Ramazan.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/nzrxwxn?igsh=MWFrZTZndjFpZjExeQ%3D%3D&utm_source=qr",
+      "linkedin": "https://www.linkedin.com/in/nazarali-ramazan-66069a385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "tg": "https://t.me/nzrxwxn"
+    },
+    {
+      "name": "Zere Nazarbekkyzy",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Student at Nazarbayev Intellectual School of Physics and Mathematics.",
+      "photo": "Zere.jpg",
+      "mail": "",
+      "inst": "https://www.instagram.com/zerenazarbekkyzy?igsh=MWI2cnQ1eWI0Z2FxdA==",
+      "linkedin": "",
+      "tg": ""
     }
   ]
 }
