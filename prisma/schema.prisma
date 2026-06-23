@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Team {
+  id            String       @id @default(cuid())
+  createdAt     DateTime     @default(now())
+  name          String
+  league        String
+  language      String
+  leaderName    String?
+  leaderEmail   String?
+  leaderPhone   String?
+  leaderCountry String?
+  leaderCity    String?
+  members       TeamMember[]
+}
+
+model TeamMember {
+  id        String         @id @default(cuid())
+  teamId    String
+  team      Team           @relation(fields: [teamId], references: [id])
+  role      String
+  name      String
+  school    String
+  grade     Int
+  email     String
+  phone     String
+  consent   ParentConsent?
+}
+
+model ParentConsent {
+  id               String     @id @default(cuid())
+  createdAt        DateTime   @default(now())
+  memberId         String     @unique
+  member           TeamMember @relation(fields: [memberId], references: [id])
+  parentName       String
+  parentEmail      String
+  parentPhone      String
+  isRepresentative Boolean    @default(false)
+  poaNumber        String?
+}
