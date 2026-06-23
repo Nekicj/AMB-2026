@@ -1,0 +1,106 @@
+{
+  "navigation": {
+    "home": "Home",
+    "team": "Our team",
+    "problems": "Problems",
+    "gallery": "Gallery",
+    "registration": "Registration",
+    "changeLanguage": "Change language"
+  },
+  "footer": {
+    "socials": "Follow us",
+    "resources": "Resources",
+    "materials": "Problems",
+    "about": "About",
+    "gallery": "Gallery",
+    "ourTeam": "Our team",
+    "rules": "Rules of the tournament"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ru {Русский} en {English} kz {Қазақ} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "AMB"
+  },
+  "home": {
+    "mathBattles": "Where sharp minds collide and collaboration wins — register for Almaty Math Battles!",
+    "numbers": "Math Battles at a glance",
+    "kids": "Children from various backgrounds from all over Kazakhstan gather here in Almaty to share the joy of math in a challenging and fun competition.",
+    "onlineParticipants": "online participants in the last tournament",
+    "offlineParticipants": "offline participants in the last tournament",
+    "fund": "total prize money awarded to winners",
+    "republicanOlympiadParticipants": "National Math Olympiad medalists among our participants",
+    "republicanOlympiadJury": "National Math Olympiad medalists among our adjudicators",
+    "ourMission": "Vision and Mission",
+    "about": "Almaty Math Battles 2026 - registration is open!",
+    "ourMissionContext": "Our aim is to spread the joy of learning new things and solving complicated problems with as many people as possible by organizing tournaments, camps, online and offline courses and lessons that are made available to everyone interested. We gather people from all over Kazakhstan to promote the exchange of ideas and foster a passion for mathematics through friendly competition. Our events are just as enriching for our team members and we welcome all interested mathematicians to join us.",
+    "timeline": "Timeline",
+    "register": "Registration",
+    "online": "Online Selection",
+    "final": "Final",
+    "registerContext": "<link>Registration</link> for the qualifying round is open until July 2, 8:00 PM Almaty time (GMT +5).",
+    "onlineContext": "The online selection will take place on July 3, 2026, on the AutoProctor platform from 10:00 AM to 12:45 PM Almaty time (GMT +5). \n All registered participants will receive platform access instructions closer to the date.",
+    "finalContext": "The final in-person round will take place from August 3 to 7 at the International University of Information Technology in Almaty, Republic of Kazakhstan."
+  },
+  "our-team": {
+    "about": "About us",
+    "weAre": "We are the Maths Battles Community, a large nonprofit tournament organization.",
+    "primaryGoal": "Our primary goal is to develop teamwork and collaboration among students passionate about mathematics.",
+    "goalsValues": "Our Goals and Values",
+    "popularization": "Popularization",
+    "collaboration": "Collaboration",
+    "fun": "Fun",
+    "popularizationContext": "Promoting the Olympiads movement among school students as a means of nurturing the intellectual elite of the country and encourage people from underprivileged backgrounds",
+    "collaborationContext": "Supporting interactions and experience exchange among the country's brightest minds through teamwork and cooperation within the teams, organizers and volunteers",
+    "funContext": "Our Math Battles are always a stressful event - olympiads always are! But out team does their best to moderate the experience and make sure the competition is fun and fair for everyone.",
+    "ourTeam": "Our team"
+  },
+  "gallery": {
+    "gallery": "Gallery",
+    "selection": "A selection of photos from our events."
+  },
+  "registration": {
+    "registration": "Registration Form for Almaty Maths Battles 2026",
+    "registrationContext": "Before filling out this form, make sure you've read and understood the <link>rules of the tournament</link>. You can edit your response after filling out the form via a letter from Google Forms that will be sent to your email. Please note that teams must consist of either 4 or 5 participants.",
+    "loading": "Loading..."
+  },
+  "problems": {
+    "title": "Past Problems",
+    "files": [
+      {
+        "name": "AMB 2022 Junior League Haileybury Almaty",
+        "file": "/past_problems/AMB 2022 Haileybury Almaty - Junior.pdf"
+      },
+      {
+        "name": "AMB 2022 Senior League Haileybury Almaty",
+        "file": "/past_problems/AMB 2022 Haileybury Almaty - Senior.pdf"
+      },{
+        "name": "AMB 2023 Junior League Haileybury Almaty",
+        "file": "/past_problems/AMB 2023 Haileybury Almaty - Junior.pdf"
+      },
+      {
+        "name": "AMB 2023 Senior League Haileybury Almaty",
+        "file": "/past_problems/AMB 2023 Haileybury Almaty - Senior.pdf"
+      },
+      {
+        "name": "AMB 2025 Junior League Pifagor",
+        "file": "/past_problems/AMB 2025 Pifagor - Junior.pdf"
+      },
+      {
+        "name": "AMB 2025 Senior League Pifagor",
+        "file": "/past_problems/AMB 2025 Pifagor - Senior.pdf"
+      },
+      {
+        "name": "AMB 2025 Baiterek",
+        "file": "/past_problems/AMB 2025 Baiterek.pdf",
+        "note": "Some of the problems were proposed by <link>Aleph</link>",
+        "noteLink": "https://aleph-problems.com/"
+      }
+    ]
+  },
+  "notFound": {
+    "missing": "Something is missing",
+    "missingContext": "Sorry, we can't find that page."
+  }
+}

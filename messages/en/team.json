@@ -1,0 +1,74 @@
+{
+  "team": [
+    {
+      "name": "Amirlan Amanzholov",
+      "role": "Chief organizer of Maths Battles Community",
+      "description": "responsible for tournament organization and problem selection. Scholarship Awardee at Haileybury Almaty, winner of the Republican Olympiad in mathematics, International Math Olympiad 2024 , 2025 silver medalist, member of the national team.",
+      "photo": "Amirlan.jpg",
+      "mail": "a.amanzholov@mathbattles.org",
+      "inst": "https://www.instagram.com/amirlanamanzholov/",
+      "linkedin": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305",
+      "tg": "https://t.me/amirlanv"
+    },
+    {
+      "name": "Timur Murat",
+      "role": "Organizer and head of the academic committee of Maths Battles Community",
+      "description": "responsible for web-development and problem selection. Scholarship Awardee at Haileybury Almaty, Asian Pacific Math Olympiad gold medalist and Balkan Math Olympiad 2024 bronze medalist, member of the national team.",
+      "photo": "Timur.jpg",
+      "mail": "mtimz.1207@gmail.com",
+      "inst": "https://www.instagram.com/tren0d/",
+      "linkedin": "https://www.linkedin.com/in/timur-murat-2a1735333",
+      "tg": "https://t.me/trenod"
+    },
+    {
+      "name": "Gleb Patyrin",
+      "role": "Co-founder and organizer of Maths Battles Community",
+      "description": "Winner of various Math Olympiads, scholarship awardee at Haileybury Almaty and Richmond University.",
+      "photo": "Gleb.jpg",
+      "mail": "glebpatyrin@gmail.com",
+      "inst": "https://www.instagram.com/gleb.patyrin/",
+      "linkedin": "https://www.linkedin.com/in/glebpatyrin/",
+      "tg": "https://t.me/mtxdd"
+    },
+    {
+      "name": "Miron Yurkevich",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Scholarship Awardee at Haileybury Almaty and Cambridge University, winner of prestigious math olympiads, including International Math Olympiad 2022, 2023, 2024 and 2025 silver medals.",
+      "photo": "Miron.webp",
+      "mail": "miron95@battles.kz",
+      "inst": "https://www.instagram.com/mironemiron/",
+      "linkedin": "",
+      "tg": "https://t.me/mironemiron"
+    },
+    {
+      "name": "Alikhan Serikuly",
+      "role": "Organizer of Maths Battles Community",
+      "description": "Gold medalist of the Republican Mathematics Olympiad, participant of the Mathematics and Chemistry Olympiads, Scholarship Awardee at Haileybury Almaty and Brown University.",
+      "photo": "Alikhan.webp",
+      "mail": "alikhan@battles.kz",
+      "inst": "https://www.instagram.com/alihan.bebras/",
+      "linkedin": "https://www.linkedin.com/in/alikhan-serikuly-67131627b/",
+      "tg": "https://t.me/alihanbebras"
+    },
+    {
+      "name": "Issatay Jaxykeldinov",
+      "role": "Co-founder of Maths Battles Community",
+      "description": "Scholarship Awardee at CUHK. Alumni of the National School of Physics and Math.",
+      "photo": "Issatay.webp",
+      "mail": "issatay@battles.kz",
+      "inst": "https://www.instagram.com/issatayy/",
+      "linkedin": "https://www.linkedin.com/in/issatay-j/",
+      "tg": "https://t.me/Coolaphrodite"
+    },
+    {
+      "name": "Nazar Berkimbay",
+      "role": "Co-founder of Maths Battles Community",
+      "description": "Student at Ecole Polytechnique with 100% stipend, silver medal at IEO, IZhO",
+      "photo": "Nazar.webp",
+      "mail": "nazar.berkimbay@polytechnique.edu",
+      "inst": "https://www.instagram.com/crazyinmath/",
+      "linkedin": "",
+      "tg": "https://t.me/Nazar1005"
+    }
+  ]
+}

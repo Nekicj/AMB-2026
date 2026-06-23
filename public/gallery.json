@@ -1,0 +1,150 @@
+{
+  "gallery": {
+    "AMB 2025 Pifagor": [
+      {
+        "name": "1",
+        "url": "ambp2025_1.PNG"
+      },
+      {
+        "name": "2",
+        "url": "ambp2025_2.PNG"
+      },
+      {
+        "name": "3",
+        "url": "ambp2025_3.PNG"
+      },
+      {
+        "name": "4",
+        "url": "ambp2025_4.PNG"
+      },
+      {
+        "name": "5",
+        "url": "ambp2025_5.PNG"
+      },
+      {
+        "name": "6",
+        "url": "ambp2025_6.PNG"
+      },
+      {
+        "name": "7",
+        "url": "ambp2025_7.PNG"
+      },
+      {
+        "name": "8",
+        "url": "ambp2025_8.PNG"
+      },
+      {
+        "name": "9",
+        "url": "ambp2025_9.PNG"
+      }
+    ],
+    "AMB 2023 Haileybury Almaty": [
+      {
+        "name": "1",
+        "url": "amb2023_1.jpeg"
+      },
+      {
+        "name": "2",
+        "url": "amb2023_2.jpeg"
+      },
+      {
+        "name": "3",
+        "url": "amb2023_3.jpeg"
+      },
+      {
+        "name": "4",
+        "url": "amb2023_4.jpeg"
+      },
+      {
+        "name": "5",
+        "url": "amb2023_5.jpeg"
+      },
+      {
+        "name": "6",
+        "url": "amb2023_6.jpeg"
+      },
+      {
+        "name": "7",
+        "url": "amb2023_7.jpeg"
+      },
+      {
+        "name": "8",
+        "url": "amb2023_8.jpeg"
+      }
+    ],
+    "AMB 2023 Fiztex School": [
+      {
+        "name": "1",
+        "url": "ambfiztex2023_1.webp"
+      },
+      {
+        "name": "2",
+        "url": "ambfiztex2023_2.webp"
+      },
+      {
+        "name": "3",
+        "url": "ambfiztex2023_3.webp"
+      },
+      {
+        "name": "4",
+        "url": "ambfiztex2023_4.webp"
+      },
+      {
+        "name": "5",
+        "url": "ambfiztex2023_5.webp"
+      },
+      {
+        "name": "6",
+        "url": "ambfiztex2023_6.webp"
+      },
+      {
+        "name": "7",
+        "url": "ambfiztex2023_7.webp"
+      },
+      {
+        "name": "8",
+        "url": "ambfiztex2023_8.webp"
+      }
+    ],
+    "AMB 2022 Haileybury Almaty": [
+      {
+        "name": "1",
+        "url": "ambhb2022_1.webp"
+      },
+      {
+        "name": "2",
+        "url": "ambhb2022_2.webp"
+      },
+      {
+        "name": "3",
+        "url": "ambhb2022_3.webp"
+      },
+      {
+        "name": "4",
+        "url": "ambhb2022_4.webp"
+      },
+      {
+        "name": "5",
+        "url": "ambhb2022_5.webp"
+      },
+      {
+        "name": "6",
+        "url": "ambhb2022_6.webp"
+      }
+    ],
+    "AMB 2022 Fizmat Almaty": [
+      {
+        "name": "1",
+        "url": "ambfizmat2022_1.webp"
+      },
+      {
+        "name": "2",
+        "url": "ambfizmat2022_2.webp"
+      },
+      {
+        "name": "3",
+        "url": "ambfizmat2022_3.webp"
+      }
+    ]
+  }
+}

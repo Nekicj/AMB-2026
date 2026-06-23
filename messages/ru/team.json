@@ -1,0 +1,74 @@
+{
+  "team": [
+    {
+      "name": "Амирлан Аманжолов",
+      "role": "Главный организатор сообщества Maths Battles",
+      "description": "ответственный за организацию турнира и подбор задач. Обладатель гранта Haileybury Almaty, победитель Республиканской олимпиады по математике, серебряный призер Международной Математической Олимпиады 2024 и 2025 годов, член национальной сборной РК.",
+      "photo": "Amirlan.jpg",
+      "mail": "a.amanzholov@mathbattles.org",
+      "inst": "https://www.instagram.com/amirlanamanzholov/",
+      "linkedin": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305",
+      "tg": "https://t.me/amirlanv"
+    },
+    {
+      "name": "Тимур Мурат",
+      "role": "Организатор и глава академического комитета сообщества Maths Battles",
+      "description": "Обладатель гранта Haileybury Almaty, золотой призер Азиатской-Тихоокеанской Математической Олимпиады и бронзовый призер Балканской Математической Олимпиады 2024 года, член национальной сборной РК.",
+      "photo": "Timur.jpg",
+      "mail": "mtimz.1207@gmail.com",
+      "inst": "https://www.instagram.com/tren0d/",
+      "linkedin": "https://www.linkedin.com/in/timur-murat-2a1735333",
+      "tg": "https://t.me/trenod"
+    },
+    {
+      "name": "Глеб Патырин",
+      "role": "Со-основатель и организатор сообщества Maths Battles",
+      "description": "Победитель различных математических олимпиад, обладатель гранта в Haileybury Almaty и Richmond University.",
+      "photo": "Gleb.jpg",
+      "mail": "glebpatyrin@gmail.com",
+      "inst": "https://www.instagram.com/gleb.patyrin/",
+      "linkedin": "https://www.linkedin.com/in/glebpatyrin/",
+      "tg": "https://t.me/mtxdd"
+    },
+    {
+      "name": "Мирон Юркевич",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Обладатель стипендии Haileybury Алматы и Cambridge University, победитель престижных математических олимпиад, в том числе серебряных медалей Международной математической олимпиады 2022, 2023, 2024 и 2025 годов.",
+      "photo": "Miron.webp",
+      "mail": "miron95@battles.kz",
+      "inst": "https://www.instagram.com/mironemiron/",
+      "linkedin": "",
+      "tg": "https://t.me/mironemiron"
+    },
+    {
+      "name": "Алихан Серикулы",
+      "role": "Организатор сообщества Maths Battles",
+      "description": "Золотой медалист Республиканской олимпиады по математике, участник олимпиад по математике и химии, обладатель стипендии Haileybury Алматы и Brown University.",
+      "photo": "Alikhan.webp",
+      "mail": "alikhan@battles.kz",
+      "inst": "https://www.instagram.com/alihan.bebras/",
+      "linkedin": "https://www.linkedin.com/in/alikhan-serikuly-67131627b/",
+      "tg": "https://t.me/alihanbebras"
+    },
+    {
+      "name": "Исатай Джаксыгельдинов",
+      "role": "Основатель сообщества Maths Battles",
+      "description": "Обладатель гранта Университета CUHK и выпускник Республиканской Физико Математической Школы.",
+      "photo": "Issatay.webp",
+      "mail": "issatay@battles.kz",
+      "inst": "https://www.instagram.com/issatayy/",
+      "linkedin": "https://www.linkedin.com/in/issatay-j/",
+      "tg": "https://t.me/Coolaphrodite"
+    },
+    {
+      "name": "Беркимбай Назар",
+      "role": "Основатель сообщества Maths Battles",
+      "description": "Студент Ecole Polytechnique со 100% грантом, обладатель серебряной медали на IEO, IZhO",
+      "photo": "Nazar.webp",
+      "mail": "nazar.berkimbay@polytechnique.edu",
+      "inst": "https://www.instagram.com/crazyinmath/",
+      "linkedin": "",
+      "tg": "https://t.me/Nazar1005"
+    }
+  ]
+}

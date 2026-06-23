@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .social-icon {
+    @apply h-5 w-5;
+  }
+}
+
+#transition {
+  transition-property: opacity, background, transfrom, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.page-transition {
+  opacity: 0;
+  background: white;
+  filter: blur(3px);
+}
