@@ -15,7 +15,7 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@neondatabase/serverless": "^0.10.4",
-    "@prisma/adapter-neon": "^7.8.0",
+    "@prisma/adapter-neon": "^6.19.3",
     "@prisma/client": "^6.19.3",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.7",
