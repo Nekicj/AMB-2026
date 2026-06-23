@@ -70,14 +70,16 @@ export default function RegisterForm() {
         optional?: boolean;
         extra?: React.ReactNode;
     }) => {
-        const validateGrade = (e: React.ChangeEvent<HTMLInputElement>) => {
-            const val = parseInt(e.target.value);
+        const validateGrade = (e: React.FormEvent<HTMLInputElement>) => {
+            const target = e.target as HTMLInputElement;
+            const val = parseInt(target.value);
+            
             if (league === "junior" && val > 9) {
-                e.target.setCustomValidity("Для юниоров класс не может быть больше 9");
+                target.setCustomValidity("Для юниоров класс не может быть больше 9");
             } else if (val < 1) {
-                e.target.setCustomValidity("Класс не может быть меньше 1");
+                target.setCustomValidity("Класс не может быть меньше 1");
             } else {
-                e.target.setCustomValidity("");
+                target.setCustomValidity("");
             }
         };
 
